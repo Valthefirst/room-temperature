@@ -24,7 +24,7 @@ def temps_function():
 
     # Return the components to the HTML template
     return render_template(
-        template_name_or_list='temp_graph.html',
+        template_name_or_list='filter.html',
         data=temperature_data,
         labels=labels,
         header="Simple line graph", description="Graph shows sales per month."
