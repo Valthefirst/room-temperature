@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/styles.css" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/temps">Temperatures</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/login">Log in</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+    <h1 class="fade-in">Login</h1>
+    <br><br>
+    <h3 class="fade-in">Enter your credentials</h3>
+    <br><br>
+
+    <form method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" value="" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" value="" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Team 4 Iot</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

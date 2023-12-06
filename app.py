@@ -30,6 +30,17 @@ def temps_function():
         header="Simple line graph", description="Graph shows sales per month."
         )
 
+@app.route('/about', methods=["GET"])
+def about_function():
+    return render_template(template_name_or_list='about.html')
+
+@app.route('/register', methods=["GET"])
+def register_function():
+    return render_template(template_name_or_list='register.html')
+
+@app.route('/login', methods=["GET"])
+def login_function():
+    return render_template(template_name_or_list='login.html')
 
 @app.route('/sales', methods=["GET"])
 def sales_function():

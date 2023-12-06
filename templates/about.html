@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/styles.css" crossorigin="anonymous">
+    <title>About</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Add CSS for the fade-in animation */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Add a delay to the h5 element */
+        .container h5 {
+            animation-delay: 0.5s; /* Adjust the delay as needed */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/temps">Temperatures</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/login">Log in</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h1 class="fade-in">About Iot 2 Final Project</h1>
+
+        <h5 class="fade-in">By Da Zhuo Xie and Valentine Nneji</h5>
+        <br><br><br>
+        <h3 class="fade-in">About the Project</h3>
+        <h5 class="fade-in">This project was made using a Raspberry Pi with the purpose of finding the relationship between
+            the presence of someone in the room and the temperature of the room. Our hypothesis is that
+            the room gets warmer with the presence of people inside. Ultrasonic sensors detect the presence
+            of people entering or exiting the room, while the temperature sensor records the room temperature every 15 minutes.
+        </h5>
+        <br>
+        <br>
+        <br>
+        <h3 class="fade-in">Technologies Used</h3>
+        <h5 class="fade-in">For the hardware, we used a Raspberry Pi, ultrasonic sensors, and a temperature sensor to track movement and temperatures. We also used wires and other connection components.
+
+            As for the software, we utilized Flask, JavaScript, ChartJS, HTML, and CSS.
+        </h5>
+
+    </div>
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Team 4 Iot</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
